@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./reset.css" rel="stylesheet">
+    
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body ng-controller="mainCtrl" class="mainBg">
+   
+   <div class="header">
+    <h1 class="title">Utah Kiteboarding</h1>
+    <!--<h2>Here, you can see all of the current data for all of your favorite spots</h2>-->
+    <nav class="navMain">
+        <!--<a ui-sref="home" ng-click="noShowMap()" >Home</a>
+        <a ui-sref="wind" ng-click="noShowMap" >Current Wind</a>
+        <a ui-sref="photos" ng-click="noShowMap">photos</a>
+        <a ui-sref="map" ng-click="showMap()">Kite Spots</a>
+        -->
+
+         <!--<a ui-sref="home" ng-click="#map={height:'70%'}">Home</a>
+        <a ui-sref="wind" ng-click="#map={height:'0px'}" >Current Wind</a>
+        <a ui-sref="photos" ng-click="#map={height:'0px'}">photos</a>
+        <a ui-sref="map" ng-click="#map={height:'70%'}">Kite Spots</a>-->
+        
+
+         <a ui-sref="home" ng-click="showme=true">Home</a>
+        <a ui-sref="wind" ng-click="showme=false" >Current Wind</a>
+        <a ui-sref="photos" ng-click="showme=false">photos</a>
+        <a ui-sref="map" ng-click="showme=true">Kite Spots</a>
+    </nav>
+   </div>
+<ui-view></ui-view>
+ <div id="map" ng-show="showme"></div>
+
+ <!--<div ng-hide="hideMap" id="map"></div>-->
+
+    
+        
+       
+        
+        {{test}} {{test1}}
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhopf_Og0R9drze_2udfZ2UgOnLNMxbdA&callback=initMap"></script>
+        <script src="./app.js"></script>
+        <script src="./service.js"></script>
+        <script src="./controller.js"></script>
+        <script src="./home/homeCtrl.js"></script>
+        <script src="./wind/windCtrl.js"></script>
+        <script src="./photos/photosCtrl.js"></script>
+        <script src="./map/mapCtrl.js"></script>
+        
+        <script src="./map/map.js"></script>
+        <script src="./kitebg.js"></script>
+        
+        
+        
+        
+    </body>
+
+</html>

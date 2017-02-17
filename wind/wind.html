@@ -1,0 +1,26 @@
+
+
+<div class="windMain">
+
+<h3>Current Wind Conditions</h3>
+<div class="ssb" onClick="window.open('https://www.google.com/maps/dir//Kite+location,+W+3600+S+St,+Spanish+Fork,+UT+84660/@40.163749,-111.7431843,14.02z/data=!4m15!1m6!3m5!1s0x0:0xe4cdc2648530d5ee!2sKite+location!8m2!3d40.166806!4d-111.7480373!4m7!1m0!1m5!1m1!1s0x874d98c5a1d68d0b:0xe4cdc2648530d5ee!2m2!1d-111.7480373!2d40.166806');" ng-class="{redWind: windTest1 == false, greenWind: windTest1 == true}">
+    <h1>Utah Lake: South Sandy Beach</h1>
+    <h2>{{ssb.wind.speed}} MPH</h2>
+    <h2>Wind direction: {{ssb.wind.deg}} degrees</h2>
+</div>
+
+<div class="lindon" onClick="window.open('https://www.google.com/maps/dir//Vineyard+Beach,+Vineyard,+UT+84058/@40.3121073,-111.7686034,13.85z/data=!4m15!1m6!3m5!1s0x874d836179638c57:0x3f4e06db81305ef4!2sVineyard+Beach!8m2!3d40.3168616!4d-111.7647985!4m7!1m0!1m5!1m1!1s0x874d836179638c57:0x3f4e06db81305ef4!2m2!1d-111.7647985!2d40.3168616');" ng-class="{redWind: windTest3 == false, greenWind: windTest3 == true}">
+    <h1>Utah Lake: Lindon Beach</h1>
+    <h2>{{lindon.wind.speed}} MPH</h2>
+    <h2>Wind direction: {{lindon.wind.deg}} degrees</h2>
+</div>
+
+    <div class="deerCr" onClick="window.open('https://www.google.com/maps/dir//Deercreek+resevoir+Kiteboard+Launch+Area,+3840+3600+W,+Heber+City,+UT+84032/@40.4685147,-111.4827856,14z/data=!4m15!1m6!3m5!1s0x0:0xce633bcc0afe5cdf!2sDeercreek+resevoir+Kiteboard+Launch+Area!8m2!3d40.4590093!4d-111.4726281!4m7!1m0!1m5!1m1!1s0x874df4d2f9efff99:0xce633bcc0afe5cdf!2m2!1d-111.4726295!2d40.4590101');" ng-class="{redWind: windTest2 == false, greenWind: windTest2 == true}">
+    <h1>Deer Creek Resorvoir</h1>
+    <h2>{{deerCr.wind.speed}} MPH</h2>
+    <h2>Wind direction: {{deerCr.wind.deg}} degrees</h2>
+</div>
+
+<button type=""></button>
+
+</div>
