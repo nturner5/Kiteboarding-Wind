@@ -34,8 +34,4 @@ mainSvc.getDataLindon($scope).then(function(inform){
   })
 
 
-
-$scope.goodC = function (){
-  console.log(inform)
-}
-})
+});
