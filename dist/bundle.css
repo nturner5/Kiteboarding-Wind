@@ -197,6 +197,25 @@ img {
   height: 25vh;
   justify-content: space-around; }
 
+.best {
+  height: 35vh;
+  background: rgba(66, 79, 88, 0.5);
+  width: 50vw;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  border-radius: 10px;
+  position: fixed;
+  left: 24%;
+  top: 30%;
+  padding: 20px; }
+
+.spot {
+  margin-top: 50px;
+  font-size: 4rem;
+  text-align: center;
+  color: white; }
+
 /*slider*/
 /*body {
         width: 100%;

@@ -35,7 +35,7 @@ angular.module('myApp', ['ui.router']).config(function ($stateProvider, $urlRout
 angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
     $scope.test = "working";
     $scope.test1 = mainSvc.test1;
-    $scope.showme = true;
+    $scope.showme = false;
     $scope.windTest1 = false;
     $scope.windTest2 = false;
     $scope.windTest3 = false;
@@ -45,7 +45,8 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
         $scope.ssb = info;
         if (info.wind.speed > 12) {
             $scope.windTest1 = true;
-            alert("Wind Conditions are kiteable at Utah Lake: South Sandy Beach");
+            $scope.bestWind = 'Utah Lake: South Sandy Beach';
+            //   alert( "Wind Conditions are kiteable at Utah Lake: South Sandy Beach")
         }
     });
 
@@ -53,7 +54,9 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
         $scope.deerCr = inf;
         if (inf.wind.speed > .2) {
             $scope.windTest2 = true;
-            alert("Wind Conditions are kiteable at Deer Creek right now");
+            $scope.bestWind = 'Deer Creek Resorvoir';
+
+            //    alert( "Wind Conditions are kiteable at Deer Creek right now")
         }
     });
 
@@ -62,7 +65,9 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
         console.log(inform.wind.speed);
         if (inform.wind.speed > 12) {
             $scope.windTest3 = true;
-            alert("Wind Conditions are kiteable at Lindon beach right now");
+            $scope.bestWind = 'Deer Creek Resorvoir';
+
+            //    alert( "Wind Conditions are kiteable at Lindon beach right now")
         }
     });
 });
