@@ -13,6 +13,12 @@ gulp.task('js', function() {
       './map/*.js',
       './photos/*.js',
       './wind/*.js',
+      './directives/*.js',
+      
+
+    
+      
+
       ])
   .pipe(babel({
     presets: ['es2015']
@@ -23,6 +29,8 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
   gulp.src([ 
+    './styles/reset.css',
+      
     './styles/*.css',
     './styles/*.scss'
     ])
@@ -41,6 +49,12 @@ gulp.task('watch', function() {
       './map/*.js',
       './photos/*.js',
       './wind/*.js',
+      './nav/*.js',
+      './directives/*.js',
+      
+     
+      
+      
       ], ['js']);
     gulp.watch('./styles/*.{css,scss}', ['css']);
 })

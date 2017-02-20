@@ -39,11 +39,13 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
     $scope.windTest1 = false;
     $scope.windTest2 = false;
     $scope.windTest3 = false;
+    $scope.navShow = false;
 
     mainSvc.getDataSsb($scope).then(function (info) {
         $scope.ssb = info;
         if (info.wind.speed > 12) {
             $scope.windTest1 = true;
+            alert("Wind Conditions are kiteable at Utah Lake: South Sandy Beach");
         }
     });
 
@@ -51,6 +53,7 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
         $scope.deerCr = inf;
         if (inf.wind.speed > .2) {
             $scope.windTest2 = true;
+            alert("Wind Conditions are kiteable at Deer Creek right now");
         }
     });
 
@@ -59,6 +62,7 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainSvc) {
         console.log(inform.wind.speed);
         if (inform.wind.speed > 12) {
             $scope.windTest3 = true;
+            alert("Wind Conditions are kiteable at Lindon beach right now");
         }
     });
 });
@@ -259,3 +263,21 @@ angular.module('myApp').controller('photosCtrl', function ($scope) {});
 'use strict';
 
 angular.module('myApp').controller('windCtrl', function ($scope) {});
+'use strict';
+
+angular.module('myApp').directive('menuDirective', function () {
+    return {
+        restrict: 'EAC',
+        templateUrl: './directives/menuDirective.html'
+
+    };
+});
+'use strict';
+
+angular.module('myApp').directive('slideNav', function () {
+    return {
+        restrict: 'EA',
+        templateUrl: './directives/navDir.html'
+
+    };
+});

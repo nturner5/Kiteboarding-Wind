@@ -8,34 +8,23 @@
     <!--<link href="./styles/reset.css" rel="stylesheet">-->
     <!--<link href="./styles/main.css" rel="stylesheet">-->
     <link href="./dist/bundle.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/eaf074fdfb.js"></script>
+    
 </head>
 
+
+
 <body ng-controller="mainCtrl" class="mainBg">
-   
-   <div class="header">
-    <h1 class="title">Utah Kiteboarding</h1>
-    <!--<h2>Here, you can see all of the current data for all of your favorite spots</h2>-->
-    <nav class="navMain">
-        <!--<a ui-sref="home" ng-click="noShowMap()" >Home</a>
-        <a ui-sref="wind" ng-click="noShowMap" >Current Wind</a>
-        <a ui-sref="photos" ng-click="noShowMap">photos</a>
-        <a ui-sref="map" ng-click="showMap()">Kite Spots</a>
-        -->
+    <!--<slide-nav></slide-nav>-->
+    <!--<div class="menu-wrap"></div>-->
 
-         <!--<a ui-sref="home" ng-click="#map={height:'70%'}">Home</a>
-        <a ui-sref="wind" ng-click="#map={height:'0px'}" >Current Wind</a>
-        <a ui-sref="photos" ng-click="#map={height:'0px'}">photos</a>
-        <a ui-sref="map" ng-click="#map={height:'70%'}">Kite Spots</a>-->
-        
+  
+   <menu-directive></menu-directive>
 
-         <a ui-sref="home" ng-click="showme=true">Home</a>
-        <a ui-sref="wind" ng-click="showme=false" >Current Wind</a>
-        <a ui-sref="photos" ng-click="showme=false">photos</a>
-        <a ui-sref="map" ng-click="showme=true">Kite Spots</a>
-    </nav>
-   </div>
+
 <ui-view></ui-view>
  <div id="map" ng-show="showme"></div>
+ 
 
  <!--<div ng-hide="hideMap" id="map"></div>-->
 
@@ -58,6 +47,9 @@
         <script src="./map/map.js"></script>-->
         <script src="./dist/bundle.js"></script>
         <!--<script src="./kitebg.js"></script>-->
+        <!--<script src="./directives/menuDirective.js"></script>-->
+        <!--<script src="./directives/navDir.js"></script>-->
+        
         
         
         

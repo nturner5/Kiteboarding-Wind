@@ -1,0 +1,16 @@
+<div class="header">
+    <h1 class="title">Utah Kiteboarding</h1>
+    <i class="fa fa-bars fa-2x ham" aria-hidden="true" ng-click="navShow=true"></i>
+    <!--<h2>Here, you can see all of the current data for all of your favorite spots</h2>-->
+    
+   </div>
+   <div class="menu-wrap" ng-show="navShow" ng-click="navShow=false">
+
+    <div class="ex"><i class="fa fa-times fa-3x ex" aria-hidden="true" ></i></div>
+   
+     <a ui-sref="home" ng-click="showme=true">Home</a>
+        <a ui-sref="wind" ng-click="showme=false" >Current Wind</a>
+        <a ui-sref="photos" ng-click="showme=false">Photos</a>
+        <a ui-sref="map" ng-click="showme=true">Kite Locations</a>
+       
+</div>

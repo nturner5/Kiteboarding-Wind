@@ -102,7 +102,8 @@ input, select {
   height: 50%; }
 
 /* Optional: Makes the sample page fill the window. */
-html, body {
+html,
+body {
   height: 100%;
   /*margin: 10%;*/
   padding: 0; }
@@ -117,10 +118,15 @@ html, body {
   margin-top: 25px; }
 
 .windMain h1 {
-  color: black; }
+  color: black;
+  font-size: 120%; }
+
+.windMain h2 {
+  margin-top: 8px; }
 
 .windMain h3 {
-  font-size: 1.6rem; }
+  font-size: 2.5rem;
+  margin-top: 20px; }
 
 .ssb {
   height: 15vh;
@@ -163,8 +169,8 @@ html, body {
   font-family: sans-serif solid black; }
 
 .title {
-  padding: 15px;
-  font-size: 2.5rem;
+  padding: 30px;
+  font-size: 3rem;
   font-family: 'Barrio', cursive; }
 
 .navMain {
@@ -225,9 +231,47 @@ img {
       .slideout-open .slideout-menu {
         display: block;
       }*/
-.mapHead {
+.navv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30vw;
+  height: 100vh;
+  background-color: dimgrey;
+  position: fixed;
+  margin-left: 0vh;
+  z-index: 20;
+  font-size: 2rem; }
+
+.menu-wrap {
+  background-color: rgba(69, 68, 150, 0.6);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 280px;
+  margin-left: 0;
+  font-size: 1em;
+  font-weight: 700;
+  overflow: auto;
+  transition: .25s;
+  z-index: 10;
+  transition: .5s;
+  display: flex;
+  flex-direction: column; }
+
+.menu-wrap a {
   color: white;
-  text-align: center;
-  margin-top: 12px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem; }
+  padding: 20px;
+  font-size: 2rem; }
+
+.ham {
+  position: absolute;
+  left: 25px;
+  top: 39px; }
+
+.ex {
+  color: white;
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-bottom: 30px; }
